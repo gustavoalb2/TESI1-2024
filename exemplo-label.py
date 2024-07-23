@@ -1,8 +1,9 @@
 import tkinter as tk
 
 class Tela:
-    self.lbl_clicou = tk.Label(self.janela, text='Clicou')
-    self.lbl_clicou.pack()
+    def clicou(self):
+        self.lbl_clicou = tk.Label(self.janela, text='Clicou')
+        self.lbl_clicou.pack()
     
     def __init__ (self, master):
         self.janela = master
